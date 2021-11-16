@@ -1,0 +1,5 @@
+/* Global */
+@import 'variables.css';
+
+/* Blocks */
+@import 'blocks/page.css';

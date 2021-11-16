@@ -1,0 +1,428 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: #1A1B22;
+    margin: unset;
+}
+
+a {
+    color: #1A1B22;
+    text-decoration: unset;
+}
+
+li {
+    display: inline-block;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 0 6.0%;
+}
+
+/* Head */
+
+header {
+    height: 80px;
+    padding: 0 6.0%;
+    background: #FFFFFF;
+    box-shadow: inset 0px -1px 0px #D1D2D6;
+}
+
+    .headerFlex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        width: 100%;
+    }
+
+    .logoFlex {
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height, or 120% */
+        display: flex;
+        align-items: center;
+        /* main/primary */
+        color: #1A1B22;
+    }
+
+    header nav {
+        height: 100%;
+        margin-left: auto;
+    }
+
+    header nav ul {
+        height: 100%;
+        margin: unset;
+        padding: unset;
+    }
+
+    header nav ul li {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        height: 60%;
+        margin-top: 19px;
+    }
+
+    /* Выделение активной вкладки */
+    header nav ul li.active {
+        border-bottom: 2px solid #1A1B22;
+    }
+
+    header nav ul li:nth-child(2) {
+        margin: 0 32px 0 34px;
+    }
+
+    header nav ul li:last-child {
+        height: 48px;
+        padding: 0 15px 0 19px;
+        border: 1px solid #1A1B22;
+        box-sizing: border-box;
+        border-radius: 100px;
+    }
+
+    header nav ul li:last-child a p {
+        width: 54px;
+        display: inline-block;
+        margin-top: 11px;
+    }
+
+    header nav ul li:last-child a img {
+        margin-bottom: 0px;
+    }
+
+    .burger {
+        width: 24px;
+        height: 24px;
+        display: none;
+    }
+
+/* Middle Section */
+
+.middle p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+    color: rgba(26, 27, 34, 0.5);
+    margin-top: 40px;
+}
+
+.middle h1 {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+    color: #1A1B22;
+    margin-top: 28px;
+}
+
+.middle div {
+    margin-top: 30px;
+    margin-bottom: 56px;
+}
+
+/* Content Section */
+
+.contentFlex {
+    width: 100%;
+    background: #F5F6F7;
+    padding-top: 62px;
+}
+
+.cardFlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: auto;
+    padding-bottom: 62px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/* Card Section */
+
+.card {
+
+    width: 400px;
+    flex-direction: column;
+
+    max-width: 400px;
+    min-height: 576px;
+    margin-bottom: 16px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    position: relative;
+
+}
+
+
+    .image {
+        max-width: 400px;
+        max-height: 272px;
+        border-radius: 16px 16px 0 0;
+    }
+
+    .nameOnCardFlex {
+        display:flex;
+        justify-content: space-between;
+        position: absolute;
+        left: 24px;
+        top: 24px;
+        right: 24px;
+    }
+
+    .categoryFlex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 88px;
+        background: #FFFFFF;
+        border-radius: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        /* identical to box height, or 171% */
+        text-align: center;
+        color: #000000;
+
+    }
+
+    .deleteFlex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FFFFFF;
+        border-radius: 10px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .deleteFlex img {
+        height: 24px;
+        width: 24px;
+    }
+
+/* Text on cards Section */
+
+.date {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #B6BCBF;
+    margin-top: 12px;
+    margin-left: 24px;
+    /* identical to box height, or 133% */
+    display: flex;
+    align-items: center;
+    /* simulator/gray/text */
+    color: #B6BCBF;
+}
+
+.title {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    /* or 115% */
+    /* main/primary */
+    color: #1A1B22;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 137% */
+    /* main/primary */
+    color: #1A1B22;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.source {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    /* simulator/gray/text */
+    color: #B6BCBF;
+    position: absolute;
+    bottom: 0px;
+    margin-left: 24px;
+
+}
+
+.removeFromSavedInner{
+    display: flex;
+}
+
+.blackDelete img {
+    filter: brightness(0%)
+}
+
+.deleteCard {
+    background: #FFFFFF;
+    border-radius: 10px;
+    height: 40px;
+    width: 159px;
+    margin-right: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+.deleteCardFlag {
+    display: flex;
+}
+
+
+/* Footer Section */
+
+footer {
+    padding: 0 6.0%;
+    height: 80px;
+    display: flex;
+    background: #FFFFFF;
+    flex-wrap: wrap;
+}
+
+.flexFooter {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+.footerText {
+    font-family: Roboto;
+    color: #b6bcbf;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.footerMenu {
+    display: flex;
+    flex-wrap: wrap;
+
+    }
+
+.footerLink1 {
+    display: flex;
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 30px;
+    margin-left: 2vw;
+    flex-wrap: wrap;
+
+}
+
+.footerLink2 {
+    display: flex;
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 30px;
+    margin-left: 2vw;
+    flex-wrap: wrap;
+}
+
+.socialWebs {
+    display: flex;
+    align-items: baseline;
+    margin-left: 2vw;
+    flex-wrap: wrap;
+    }
+
+.socialWebs1 {
+    display: flex;
+    align-items: baseline;
+    margin-left: 2vw;
+    flex-wrap: wrap;
+    }
+
+.socialWebs2 {
+    display: flex;
+    align-items: baseline;
+    margin-left: 2vw;
+    flex-wrap: wrap;
+    }
+
+.footerLinks {
+    margin-top: 20px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+
+@media (max-width: 720px) {
+
+  .cardFlexContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  footer {
+    height: 176px;
+  }
+
+  .footerText {
+    order: 1;
+  }
+}
