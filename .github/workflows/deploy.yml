@@ -15,12 +15,12 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-
-       - name: HTML5Validator
+          
+      - name: HTML5Validator
         uses: Cyb3r-Jak3/html5validator-action
         with:
           root: tests/
-          blacklist: invalid
+          blacklist: invalid   
 
   deploy:
     runs-on: ubuntu-latest
