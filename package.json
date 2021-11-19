@@ -5,7 +5,6 @@
   "main": "start.js",
   "scripts": {
     "build": "webpack --mode=production",
-    "test": "node-w3c-validator -i ./dist/**/*.html -f html",
     "start": "node start.js"
   },
   "keywords": [],
