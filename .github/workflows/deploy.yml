@@ -20,7 +20,7 @@ jobs:
         uses: Cyb3r-Jak3/html5validator-action@master
         with:
           root: dist/
-          continue-on-error: true
+        continue-on-error: true
 
   deploy:
     runs-on: ubuntu-latest
